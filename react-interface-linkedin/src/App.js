@@ -15,8 +15,8 @@ function App() {
     .filter((item) => {
       return (
         item.petName.toLowerCase().includes(query.toLowerCase()) ||
-        item.petName.toLowerCase().includes(query.toLowerCase()) ||
-        item.petName.toLowerCase().includes(query.toLowerCase())
+        item.ownerName.toLowerCase().includes(query.toLowerCase()) ||
+        item.aptNotes.toLowerCase().includes(query.toLowerCase())
       );
     })
     .sort((a, b) => {
